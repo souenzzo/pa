@@ -1,4 +1,5 @@
 (ns pa.main
+  (:gen-class)
   (:require [io.pedestal.http :as http]
             [com.walmartlabs.lacinia.pedestal2 :as lp]
             [pa.core :as pa])
