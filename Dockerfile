@@ -12,5 +12,5 @@ FROM openjdk:17-jdk-alpine
 RUN adduser -D pa
 USER pa
 WORKDIR /home/pa
-COPY --from=clojure --chown=pa /home/pa/target/ap.jar ./
+COPY --from=clojure --chown=pa /home/pa/target/pa.jar ./
 CMD ["java", "-jar", "pa.jar"]
