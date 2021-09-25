@@ -1,0 +1,10 @@
+type Document {
+    selectString(cssQuery: String): String
+}
+type Query {
+    hello: String
+    scraper(url: String): Document
+}
+schema {
+    query: Query
+}

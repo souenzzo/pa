@@ -1,0 +1,12 @@
+{:paths   ["src" "resources"]
+ :deps    {org.clojure/clojure              {:mvn/version "1.10.3"}
+           com.walmartlabs/lacinia          {:mvn/version "0.38.0"}
+           com.walmartlabs/lacinia-pedestal {:mvn/version "0.16.1"}
+           hiccup/hiccup                    {:mvn/version "2.0.0-alpha2"}
+           org.jsoup/jsoup                  {:mvn/version "1.14.2"}
+           io.pedestal/pedestal.service     {:mvn/version "0.5.9"}
+           io.pedestal/pedestal.jetty       {:mvn/version "0.5.9"}}
+ :aliases {:dev {:extra-paths ["dev" "test"]
+                 :extra-deps  {io.github.clojure/tools.build {:git/url "https://github.com/clojure/tools.build.git"
+                                                              :sha     "1e7c019730dc6f9e38793170c8801c5950516b60"}
+                               org.clojure/test.check        {:mvn/version "1.1.0"}}}}}
